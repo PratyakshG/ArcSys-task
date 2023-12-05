@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.sidebar {
+  .text-group {
+    font-weight: 500;
+  }
+
+  li{
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    gap: 16px;
+    display: flex;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  .text-group {
+    font-size: 12px;
+    img {
+      display: none;
+    }
+  }
+}
+
+.login {
+  position: relative;
+  align-items: center;
+  button {
+    background-color: #f3ae9f;
+    border-radius: 200px;
+    height: 50px;
+    width: 180px;
+
+    @media screen and (max-width: 1024px) {
+      height: 30px;
+      width: 120px;
+    }
+
+    span {
+      color: black;
+      align-items: center;
+      padding: 15px 40px 20px 40px;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 12px;
+        padding: 8px 20px 10px 20px;
+      }
+    }
+  }
+}

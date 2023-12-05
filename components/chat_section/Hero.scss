@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+//hero section styling
+.container {
+  justify-content: space-between;
+  display: flex;
+  gap: 30px;
+  height: 100vh;
+  max-width: 100vw;
+  width: 85vw;
+  color: black;
+
+  @media screen and (max-width: 1024px) {
+    gap: 10px;
+    height: 95vh;
+  }
+
+  //users section styling (left section)
+  .users {
+    border-radius: 10px;
+    flex: 1;
+    height: auto;
+    background-color: rgba(24, 24, 24, 1);
+    color: white;
+
+    //top message styling
+    .intro {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @media screen and (max-width: 1024px) {
+        gap: 12px;
+      }
+
+      .text1 {
+        font-weight: 300;
+        line-height: 120%;
+      }
+
+      .text2 {
+        width: 100%;
+        display: flex;
+        color: black;
+        background-color: #f3ae9f;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+
+        @media screen and (max-width: 1024px) {
+          border-radius: 6px;
+        }
+      }
+
+      .text3 {
+        font-weight: 300;
+        line-height: 140%;
+      }
+    }
+
+    //user-styles (individual chat display on the left section)
+    .user {
+      padding: 0 40px 20px 40px;
+
+      @media screen and (max-width: 1024px) {
+        padding: 0 20px 10px 20px;
+      }
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      .user_container {
+        height: 55px;
+        width: 100%;
+        border-radius: 150px;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+
+        @media screen and (max-width: 1024px) {
+          height: 36px;
+          gap: 8px;
+        }
+      }
+
+      .active {
+        background-color: #2f2f2f;
+      }
+
+      .inactive {
+        background-color: transparent;
+      }
+
+      img {
+        margin-left: 6px;
+        height: 42px;
+        width: 42px;
+        object-fit: cover;
+        border-radius: 50%;
+
+        @media screen and (max-width: 1024px) {
+          height: 24px;
+          width: 24px;
+        }
+      }
+
+      .profile {
+        display: flex;
+        flex-direction: column;
+
+        .username {
+          color: white;
+          font-size: 16px;
+        }
+        .last_message {
+          color: #7f8781;
+          font-size: 14px;
+        }
+
+        @media screen and (max-width: 1024px) {
+          .username {
+            font-size: 12px;
+          }
+
+          .last_message {
+            font-size: 10px;
+          }
+        }
+      }
+
+      .line {
+        margin-top: 20px;
+        border-bottom: 1px solid grey;
+      }
+    }
+
+    .newbot {
+      padding: 0 40px 20px 40px;
+
+      @media screen and (max-width: 1024px) {
+        padding-left: 12px;
+      }
+    }
+  }
+
+  //messages styling (right section)
+  .messages {
+    border-radius: 10px;
+    flex: 2;
+    background-color: rgba(24, 24, 24, 1);
+
+    .profileInfo {
+      flex: 10%;
+      border-radius: 10px 10px 0 0;
+      min-height: 80px;
+      background-color: #2f2f2f;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 30px;
+      color: white;
+
+      @media screen and (max-width: 1024px) {
+        min-height: 60px;
+        padding: 0px 20px;
+      }
+
+      .userInfo {
+        align-items: center;
+
+        img {
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      .options {
+        @media screen and (max-width: 1024px) {
+          gap: 10px;
+
+          .back,
+          .delete {
+            span {
+              display: none;
+            }
+            img {
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    //chats-styling (the displayed messages fetched)
+    .chats {
+      flex: 80%;
+
+      .chat1 {
+        position: relative;
+        display: flex;
+        .sent {
+          display: flex;
+          align-items: flex-end;
+          color: black;
+          gap: 20px;
+          margin-bottom: 12px;
+
+          @media screen and (max-width: 1024px) {
+            gap: 10px;
+          }
+          span {
+            text-align: left;
+            border-radius: 12px 12px 0 12px;
+            font-weight: normal;
+            background-color: #f3ae9f;
+          }
+        }
+
+        .recieved {
+          display: flex;
+          color: white;
+          gap: 20px;
+          margin-bottom: 12px;
+
+          @media screen and (max-width: 1024px) {
+            gap: 10px;
+          }
+          span {
+            font-weight: normal;
+            border-radius: 12px 12px 12px 0;
+            background-color: #2f2f2f;
+          }
+        }
+
+        .msg {
+          display: flex;
+          max-width: 350px;
+          min-height: 40px;
+          padding: 10px 15px;
+
+          @media screen and (max-width: 1024px) {
+            padding: 8px 10px;
+            font-size: 12px;
+            max-width: 250px;
+          }
+        }
+
+        img {
+          border-radius: 50%;
+          width: 42px;
+          height: 42px;
+          object-fit: cover;
+
+          @media screen and (max-width: 1024px) {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
+
+    //input field styling (where one types messages to send)
+    .input {
+      flex: 10%;
+      width: 100%;
+      padding: 0px 30px;
+      gap: 20px;
+
+      @media screen and (max-width: 1024px) {
+        padding: 0px 20px;
+        gap: 8px;
+      }
+
+      .inputBox {
+        width: 100%;
+        input {
+          width: 100%;
+          border-radius: 70px;
+          padding-left: 20px;
+          background-color: #2f2f2f;
+          outline: none;
+          font-size: 16px;
+          color: white;
+
+          @media screen and (max-width: 1024px) {
+            font-size: 12px;
+            height: 30px;
+          }
+        }
+      }
+
+      img {
+        height: 50px;
+
+        @media screen and (max-width: 1024px) {
+          height: 30px;
+        }
+      }
+    }
+  }
+}

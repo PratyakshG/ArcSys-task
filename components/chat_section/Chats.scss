@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+.chat1 {
+  position: relative;
+  .sent {
+    align-content: flex-end;
+    background-color: black;
+    min-height: 40px;
+    span {
+      padding: 10px 15px;
+      height: max-content;
+      color: white;
+      background-color: #f3ae9f;
+    }
+
+    img{
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+    }
+  }
+
+  .recieved {
+    min-height: 40px;
+    color: black;
+    background-color: #2f2f2f;
+  }
+}

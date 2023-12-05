@@ -1,0 +1,28 @@
+img {
+  cursor: pointer;
+}
+
+.connect {
+  font-size: 18px;
+}
+
+//tablet
+@media screen and (max-width: 1024px) {
+  .footer {
+    margin-top: 20px;
+  }
+
+  .connect {
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  img {
+    gap: 0;
+    height: 16px;
+  }
+
+  .socials {
+    gap: 0;
+  }
+}
