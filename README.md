@@ -15,9 +15,7 @@ I have tried to prioritize the looks of the interface and did not add any functi
 
 However, for the chats section I have implemented the active state of any chat and also implemented a hover effect on the individual profile.
     The chat section is divided into two sections that are:
-
         LEFT SECTION, where you could see all the chats and that is where I have implemented the hover and active state functionality.
-
         RIGHT SECTION, where you could see the individual chats and the history.
         However, I could not implement the history feature due to lack of time.
 
